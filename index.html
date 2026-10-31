@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BUDGETTECH ZA | Tactical Gaming PC Configurator &amp; Storefront</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "tertiary-fixed": "#c4e7ff",
+            "secondary-container": "#0266ff",
+            "on-primary-fixed": "#002022",
+            "on-primary": "#00363a",
+            "primary": "#dbfcff",
+            "background": "#0b1322",
+            "on-tertiary-fixed-variant": "#004c69",
+            "primary-container": "#00f0ff",
+            "primary-fixed-dim": "#00dbe9",
+            "on-secondary-fixed-variant": "#003fa4",
+            "on-tertiary-fixed": "#001e2c",
+            "inverse-primary": "#006970",
+            "on-secondary-container": "#f9f7ff",
+            "inverse-surface": "#dbe2f7",
+            "secondary": "#b3c5ff",
+            "surface-container-high": "#222a39",
+            "surface-container-lowest": "#060e1c",
+            "on-error": "#690005",
+            "surface-container-low": "#141c2a",
+            "secondary-fixed-dim": "#b3c5ff",
+            "surface-bright": "#323949",
+            "outline": "#849495",
+            "error": "#ffb4ab",
+            "on-error-container": "#ffdad6",
+            "secondary-fixed": "#dae1ff",
+            "on-surface-variant": "#b9cacb",
+            "surface-dim": "#0b1322",
+            "on-secondary": "#002b75",
+            "on-tertiary": "#00354a",
+            "on-primary-fixed-variant": "#004f54",
+            "inverse-on-surface": "#293040",
+            "on-background": "#dbe2f7",
+            "surface-tint": "#00dbe9",
+            "tertiary-container": "#aee0ff",
+            "outline-variant": "#3b494b",
+            "surface-variant": "#2d3544",
+            "on-tertiary-container": "#00668b",
+            "surface-container-highest": "#2d3544",
+            "tertiary-fixed-dim": "#7bd0ff",
+            "on-secondary-fixed": "#001849",
+            "on-primary-container": "#006970",
+            "surface": "#0b1322",
+            "on-surface": "#dbe2f7",
+            "surface-container": "#18202e",
+            "tertiary": "#eef7ff",
+            "error-container": "#93000a",
+            "primary-fixed": "#7df4ff"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "margin": "2.5rem",
+            "space-xl": "2.5rem",
+            "gutter": "1.5rem",
+            "margin-sm": "1rem",
+            "space-md": "1rem",
+            "space-xs": "0.25rem",
+            "gutter-sm": "1rem",
+            "space-sm": "0.5rem",
+            "space-lg": "1.5rem"
+          },
+          "fontFamily": {
+            "headline-lg-mobile": ["Space Grotesk"],
+            "label-md": ["Space Grotesk"],
+            "headline-sm": ["Space Grotesk"],
+            "body-lg": ["Inter"],
+            "headline-lg": ["Space Grotesk"],
+            "body-sm": ["Inter"],
+            "label-lg": ["Space Grotesk"],
+            "body-md": ["Inter"],
+            "headline-xl-mobile": ["Space Grotesk"],
+            "label-sm": ["Space Grotesk"],
+            "headline-md": ["Space Grotesk"],
+            "headline-xl": ["Space Grotesk"]
+          },
+          "fontSize": {
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "700" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" }],
+            "headline-sm": ["22px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.08em", "fontWeight": "600" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "headline-xl-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.1em", "fontWeight": "700" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "headline-xl": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      line-height: 1;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .custom-scroll::-webkit-scrollbar {
+      height: 4px;
+      width: 4px;
+    }
+    .custom-scroll::-webkit-scrollbar-track {
+      background: #060e1c;
+    }
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background: rgba(0, 240, 255, 0.4);
+      border-radius: 2px;
+    }
+    .reticle-corner {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      border-color: #00f0ff;
+    }
+    .glow-cyan-card {
+      box-shadow: 0 0 20px rgba(0, 240, 255, 0.25), inset 0 0 10px rgba(0, 240, 255, 0.12);
+    }
+    .glow-cyan-btn {
+      box-shadow: 0 0 24px rgba(0, 240, 255, 0.55);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body-md antialiased min-h-screen selection:bg-primary-container selection:text-on-primary-fixed overflow-x-hidden">
+<!-- TOP APP BAR -->
+<header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-margin-sm md:px-margin py-space-sm w-full bg-surface-container-lowest/80 dark:bg-surface-container-lowest/80 backdrop-blur-xl border-b border-outline-variant/30 shadow-[0_4px_30px_rgba(0,0,0,0.8)]">
+<div class="flex items-center gap-space-sm">
+<button aria-label="Open Tactical Console Menu" class="p-space-xs text-primary-container hover:text-primary transition-colors focus:outline-none" onclick="toggleSideNav()">
+<span class="material-symbols-outlined text-headline-sm" data-icon="memory">memory</span>
+</button>
+<a class="flex items-center gap-2" href="#hero">
+<span class="font-headline-sm text-headline-sm font-bold tracking-widest text-primary-container drop-shadow-[0_0_12px_rgba(0,240,255,0.6)]">BUDGETTECH ZA</span>
+<span class="hidden lg:inline-flex items-center px-2 py-0.5 rounded text-[10px] font-label-sm tracking-wider uppercase bg-surface-container-high text-primary-container border border-primary-container/30">
+          AURORA LABS
+        </span>
+</a>
+</div>
+<!-- Desktop Navigation Cluster -->
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-primary font-label-md border-b-2 border-primary-container pb-1 text-shadow transition-colors" href="#configurator">System Configurator</a>
+<a class="text-on-surface-variant font-label-md hover:text-primary transition-colors duration-200" href="#prebuilt-showcase">Pre-Built Rigs</a>
+<a class="text-on-surface-variant font-label-md hover:text-primary transition-colors duration-200" href="#chassis-preview">Chassis Showcase</a>
+<a class="text-on-surface-variant font-label-md hover:text-primary transition-colors duration-200" href="#telemetry-benchmarks">Telemetry Benchmarks</a>
+</nav>
+<!-- Header Actions -->
+<div class="flex items-center gap-space-sm">
+<div class="hidden sm:flex items-center gap-2 px-3 py-1 rounded bg-surface-container border border-outline-variant/40 text-on-surface-variant text-[11px] font-label-sm">
+<span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+<span class="text-emerald-300 font-medium">WhatsApp Support: Live</span>
+</div>
+<button class="relative p-2 rounded bg-surface-container-high/60 border border-outline-variant/40 hover:border-primary-container hover:text-primary-container hover:shadow-[0_0_16px_rgba(0,240,255,0.4)] transition-all duration-200" onclick="openConfigSummary()" title="View Rig Cart / Summary">
+<span class="material-symbols-outlined text-headline-sm text-primary-container" data-icon="shopping_bag">shopping_bag</span>
+<span class="absolute -top-1 -right-1 bg-secondary-container text-on-secondary-container font-label-sm text-[10px] w-5 h-5 rounded-full flex items-center justify-center font-bold" id="cart-counter">1</span>
+</button>
+</div>
+</header>
+<!-- NAVIGATION DRAWER (Slide-out menu for mobile & desktop) -->
+<aside class="fixed inset-y-0 left-0 z-50 w-80 bg-surface-container-low/95 dark:bg-surface-container-low/95 backdrop-blur-2xl border-r border-outline-variant/30 shadow-[0_0_32px_rgba(0,0,0,0.9),0_0_16px_rgba(0,102,255,0.15)] transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col p-space-md" id="tactical-drawer">
+<div class="flex items-center justify-between pb-space-md border-b border-outline-variant/30">
+<div>
+<p class="font-headline-sm text-headline-sm font-bold text-primary-container tracking-wider">TACTICAL RIG CONSOLE</p>
+<p class="text-[11px] text-on-surface-variant uppercase tracking-wider font-label-sm">BudgetTechZA Telemetry Engine</p>
+</div>
+<button class="p-1 text-on-surface-variant hover:text-primary transition-colors" onclick="toggleSideNav()">
+<span class="material-symbols-outlined" data-icon="close">close</span>
+</button>
+</div>
+<nav class="flex flex-col gap-1 mt-space-md flex-1">
+<a class="flex items-center gap-space-sm px-space-md py-space-sm bg-surface-container text-primary-container border-l-2 border-primary-container shadow-[inset_0_0_12px_rgba(0,240,255,0.15)] font-label-lg text-label-lg" href="#configurator" onclick="toggleSideNav()">
+<span class="material-symbols-outlined" data-icon="settings_suggest">settings_suggest</span>
+<span>System Configurator</span>
+</a>
+<a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/40 transition-colors duration-200 font-label-lg text-label-lg" href="#prebuilt-showcase" onclick="toggleSideNav()">
+<span class="material-symbols-outlined" data-icon="desktop_windows">desktop_windows</span>
+<span>Pre-Built Rigs</span>
+</a>
+<a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/40 transition-colors duration-200 font-label-lg text-label-lg" href="#chassis-preview" onclick="toggleSideNav()">
+<span class="material-symbols-outlined" data-icon="view_in_ar">view_in_ar</span>
+<span>Chassis Showcase</span>
+</a>
+<a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/40 transition-colors duration-200 font-label-lg text-label-lg" href="#telemetry-benchmarks" onclick="toggleSideNav()">
+<span class="material-symbols-outlined" data-icon="speed">speed</span>
+<span>Telemetry Benchmarks</span>
+</a>
+<a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/40 transition-colors duration-200 font-label-lg text-label-lg text-emerald-400" href="https://wa.me/27821234567" target="_blank">
+<span class="material-symbols-outlined text-emerald-400" data-icon="chat">chat</span>
+<span>WhatsApp Direct Support</span>
+</a>
+</nav>
+<div class="p-space-sm bg-surface-container-lowest/80 border border-outline-variant/30 rounded">
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant font-label-sm mb-1">
+<span>ZA NATIONWIDE COURIER</span>
+<span class="text-primary-container font-bold">ACTIVE</span>
+</div>
+<p class="text-[12px] text-on-surface">Deliveries to Joburg, Cape Town, Durban, Pretoria, and regional centers in 2-3 business days.</p>
+</div>
+</aside>
+<div class="fixed inset-0 bg-black/70 backdrop-blur-sm z-40 hidden" id="drawer-backdrop" onclick="toggleSideNav()"></div>
+<!-- HERO SECTION -->
+<section class="relative pt-24 md:pt-32 pb-16 md:pb-24 px-margin-sm md:px-margin overflow-hidden bg-gradient-to-b from-surface-container-lowest via-surface to-background" id="hero">
+<!-- Ambient Cyan Radial Glow -->
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[450px] bg-secondary-container/15 blur-[120px] rounded-full pointer-events-none"></div>
+<div class="max-w-7xl mx-auto relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<!-- Hero Copy -->
+<div class="lg:col-span-7 flex flex-col gap-5">
+<div class="inline-flex items-center gap-2 px-3 py-1 w-fit rounded-full bg-surface-container-high/80 border border-primary-container/30 text-primary-container text-label-md font-label-md">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span>
+<span>NEXT-GEN AURORA ARCHITECTURE // SOUTH AFRICA</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-surface font-extrabold tracking-tight leading-none uppercase">
+            ENGINEERED FOR GAMING. <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-container to-secondary">PRICED FOR EVERYONE.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+            Discover powerful gaming PCs built for performance without breaking the bank. Tactical hand-built precision with Alienware Aurora styling, custom liquid cryo cooling, and zero-compromise ZAR component pricing.
+          </p>
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<a class="px-6 py-3.5 rounded bg-primary-container text-on-primary-fixed font-headline-sm text-[15px] font-bold tracking-wider uppercase glow-cyan-btn hover:brightness-110 active:scale-95 transition-all flex items-center gap-2" href="#configurator">
+<span class="material-symbols-outlined" data-icon="tune">tune</span>
+<span>Build Your Own PC</span>
+</a>
+<a class="px-6 py-3.5 rounded bg-surface-container-high/80 border border-primary-container/40 text-primary font-headline-sm text-[15px] font-semibold tracking-wider uppercase hover:border-primary-container hover:text-primary-container hover:shadow-[0_0_16px_rgba(0,240,255,0.3)] active:scale-95 transition-all flex items-center gap-2" href="#prebuilt-showcase">
+<span class="material-symbols-outlined" data-icon="rocket_launch">rocket_launch</span>
+<span>Explore Gaming PCs</span>
+</a>
+</div>
+<!-- Quick Category Filters -->
+<div class="pt-6 border-t border-outline-variant/30 flex flex-wrap items-center gap-2">
+<span class="text-label-sm font-label-sm text-on-surface-variant mr-2">POPULAR MATRICES:</span>
+<button class="category-pill active-pill px-3 py-1 rounded text-label-md font-label-md border border-primary-container text-primary-container bg-surface-container-high" onclick="setFilter('all')">All Rigs</button>
+<button class="category-pill px-3 py-1 rounded text-label-md font-label-md border border-outline-variant/40 text-on-surface-variant hover:text-primary hover:border-primary-container/50 bg-surface-container/60" onclick="setFilter('custom')">Custom Configurator</button>
+<button class="category-pill px-3 py-1 rounded text-label-md font-label-md border border-outline-variant/40 text-on-surface-variant hover:text-primary hover:border-primary-container/50 bg-surface-container/60" onclick="setFilter('prebuilt')">Pre-Built Rigs</button>
+<button class="category-pill px-3 py-1 rounded text-label-md font-label-md border border-outline-variant/40 text-on-surface-variant hover:text-primary hover:border-primary-container/50 bg-surface-container/60" onclick="setFilter('work')">School &amp; Work PCs</button>
+<button class="category-pill px-3 py-1 rounded text-label-md font-label-md border border-outline-variant/40 text-on-surface-variant hover:text-primary hover:border-primary-container/50 bg-surface-container/60" onclick="setFilter('esports')">Esports Rigs</button>
+</div>
+</div>
+<!-- Hero Rig Showcase Card -->
+<div class="lg:col-span-5">
+<div class="relative rounded-lg p-1 bg-gradient-to-b from-primary-container/30 via-outline-variant/20 to-surface-container-low shadow-[0_0_40px_rgba(0,102,255,0.2)]">
+<div class="bg-surface-container-low/90 rounded-lg p-5 backdrop-blur-xl border border-primary-container/20 relative">
+<div class="absolute top-4 right-4 flex items-center gap-1.5 px-2.5 py-1 rounded bg-secondary-container/20 border border-secondary-container text-secondary text-[11px] font-label-sm uppercase">
+<span class="material-symbols-outlined text-[14px]" data-icon="verified">verified</span>
+<span>FLAGSHIP DEMO</span>
+</div>
+<div class="relative w-full aspect-square rounded-md overflow-hidden bg-surface-container-lowest/80 border border-outline-variant/30 flex items-center justify-center p-2 mb-4 group">
+<img alt="BudgetTechZA Aurora Vortex R16" class="w-full h-full object-cover rounded transition-transform duration-500 group-hover:scale-105" data-alt="A cinematic, high-end custom liquid-cooled gaming PC inside a sleek Alienware Aurora style aerodynamic dark chassis. The internal glass window reveals glowing neon cyan coolant tubes, an illuminated ROG motherboard with electric blue RGB fans, and clean cable sleeves resting on an industrial stainless studio table under dramatic low-key cybernetic lighting." id="heroChassisImg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-rbCng9rdJ_tNCOy-mSMxzrM5pfcHS2ExVJEaqqdxiCoiWa4kkgFbaEKzF_6KC-M4yeJW-tybgSEcCbAJdI33kDObQS3FOjr_C1g9XLczyytqNnvi_uuc_PbNvxCEAOHhlRgQKs82DF2qWOU4wGhvTKwjprlQoALvqQEA1SH1g74EKeZzNOADdFDOOr3AQ4IsGU_NgzZuO3t8zpVISLaevdQYfIIPXVai4mdABoE"/>
+<div class="absolute bottom-3 left-3 bg-surface-container-lowest/85 backdrop-blur-md px-3 py-1 rounded border border-primary-container/40 text-label-sm font-label-sm text-primary-container">
+                  CHASSIS: AURORA VORTEX R16
+                </div>
+</div>
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">AURORA VORTEX R16 ZA</h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Intel Core i7-14700KF • RTX 4070 Ti Super 16GB</p>
+</div>
+<div class="text-right">
+<p class="text-label-sm font-label-sm text-on-surface-variant">STARTING FROM</p>
+<p class="font-headline-sm text-headline-sm font-bold text-primary-container">R 28,499</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- MAIN SYSTEM CONFIGURATOR SECTION -->
+<section class="py-16 px-margin-sm md:px-margin max-w-7xl mx-auto scroll-mt-24" id="configurator">
+<!-- Header info banner -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8 pb-4 border-b border-outline-variant/30">
+<div>
+<div class="flex items-center gap-2 text-primary-container font-label-sm text-label-sm mb-1 uppercase tracking-widest">
+<span class="material-symbols-outlined text-[16px]" data-icon="settings_input_component">settings_input_component</span>
+<span>INTERACTIVE TACTICAL RIG BUILDER</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold text-on-surface">
+          CUSTOMIZE YOUR MACHINE
+        </h2>
+<p class="text-on-surface-variant font-body-md text-body-md mt-1">
+          Hand-select your silicon modules. Real-time wattage, compatibility checks, and instant WhatsApp dispatch formatting.
+        </p>
+</div>
+<div class="flex items-center gap-3">
+<button class="px-4 py-2 rounded bg-surface-container-high/60 border border-outline-variant/50 text-on-surface-variant hover:text-error hover:border-error/40 text-label-md font-label-md transition-all flex items-center gap-1.5" onclick="resetToDefaults()" title="Reset all hardware options to baseline setup">
+<span class="material-symbols-outlined text-[16px]" data-icon="restart_alt">restart_alt</span>
+<span>Reset Configuration</span>
+</button>
+<div class="flex items-center gap-2 px-3 py-1.5 rounded bg-surface-container-high/80 border border-primary-container/30 text-primary-container text-label-md font-label-md">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span id="compatibility-status">100% COMPATIBLE</span>
+</div>
+</div>
+</div>
+<!-- Triple Zone Grid for Configurator: Left Preview, Right Specs & Options -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- LEFT COLUMN: Chassis Showcase & Telemetry HUD (Sticky on Desktop) -->
+<div class="lg:col-span-5 lg:sticky lg:top-24 space-y-6">
+<!-- Chassis Visualizer Card -->
+<div class="bg-surface-container-low/85 backdrop-blur-2xl rounded-lg p-5 border border-outline-variant/40 shadow-[0_8px_32px_rgba(0,0,0,0.7)]" id="chassis-preview">
+<div class="flex items-center justify-between mb-3">
+<span class="text-label-md font-label-md text-primary-container font-bold tracking-wider uppercase" id="model-tag">
+              AURORA VORTEX R16 ZA EDITION
+            </span>
+<div class="flex items-center gap-1">
+<button class="px-2 py-0.5 rounded text-[11px] font-label-sm border border-primary-container bg-primary-container/20 text-primary-container" id="btn-chassis-aurora" onclick="switchChassis('aurora')">
+                Aurora R16
+              </button>
+<button class="px-2 py-0.5 rounded text-[11px] font-label-sm border border-outline-variant/40 bg-surface-container text-on-surface-variant hover:text-primary" id="btn-chassis-apex" onclick="switchChassis('apex')">
+                Apex Titan ZA
+              </button>
+</div>
+</div>
+<!-- Interactive Chassis Frame with Lighting Glow Overlay -->
+<div class="relative w-full aspect-square rounded-md overflow-hidden bg-surface-container-lowest border border-outline-variant/30 flex items-center justify-center p-3 group">
+<div class="absolute inset-0 bg-primary-container/10 transition-colors duration-500 pointer-events-none" id="ambient-light-glow"></div>
+<img alt="Active Chassis Display" class="w-full h-full object-cover rounded transition-transform duration-700 group-hover:scale-105" data-alt="A tactical studio view of an Alienware Aurora style custom gaming PC chassis featuring curved dark alloy front panel and electric cyan liquid-cooled looped plumbing illuminated through dark tinted tempered glass with radiant blue fans and black mechanical accents on a dark metallic workbench." id="activeChassisImage" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJFNO7tgi18GNCG4Wqfko_JskgCzGnstBbon3i61hmQJGLbgE0WrjszkkLniyOPX9ZJ_ZoEGyTKDwszXaNsmtSLK8L255Zz_ToCg489kERTv6ElusJSaebg5QU7VSGsWVns_D908sYrEoXCQyU0uOaZOWJ16Eax1sjttQULG_vlFQG7rD-00JJIZuZZoR2IpVg-nAnAaLZhoRFdZeTllqD5Dhz3Iduy0xtkoAaw-c"/>
+<!-- Reticles -->
+<span class="reticle-corner top-2 left-2 border-t-2 border-l-2"></span>
+<span class="reticle-corner top-2 right-2 border-t-2 border-r-2"></span>
+<span class="reticle-corner bottom-2 left-2 border-b-2 border-l-2"></span>
+<span class="reticle-corner bottom-2 right-2 border-b-2 border-r-2"></span>
+<!-- Live Price Overlay -->
+<div class="absolute bottom-3 right-3 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded border border-primary-container/50">
+<span class="text-[10px] block font-label-sm text-on-surface-variant">ESTIMATED BUILD</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary-container" id="preview-price-display">R 28,499.00</span>
+</div>
+</div>
+<!-- Lighting Controller -->
+<div class="mt-4 pt-4 border-t border-outline-variant/30">
+<div class="flex items-center justify-between mb-2">
+<span class="text-label-sm font-label-sm text-on-surface-variant">CHASSIS LIGHTING SPECTRUM</span>
+<span class="text-label-sm font-label-sm text-primary-container" id="active-light-label">Cyan Aurora</span>
+</div>
+<div class="grid grid-cols-4 gap-2">
+<button class="lighting-btn active-lighting py-1.5 px-2 rounded bg-surface-container-high/90 border border-primary-container text-[11px] font-label-sm text-primary flex items-center justify-center gap-1.5" onclick="setChassisLighting('cyan', 'Cyan Aurora')">
+<span class="w-2.5 h-2.5 rounded-full bg-cyan-400"></span>
+<span>Aurora</span>
+</button>
+<button class="lighting-btn py-1.5 px-2 rounded bg-surface-container-high/60 border border-outline-variant/30 text-[11px] font-label-sm text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1.5" onclick="setChassisLighting('blue', 'Electric Blue')">
+<span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span>
+<span>Cobalt</span>
+</button>
+<button class="lighting-btn py-1.5 px-2 rounded bg-surface-container-high/60 border border-outline-variant/30 text-[11px] font-label-sm text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1.5" onclick="setChassisLighting('white', 'Glacier White')">
+<span class="w-2.5 h-2.5 rounded-full bg-slate-100"></span>
+<span>Glacier</span>
+</button>
+<button class="lighting-btn py-1.5 px-2 rounded bg-surface-container-high/60 border border-outline-variant/30 text-[11px] font-label-sm text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1.5" onclick="setChassisLighting('stealth', 'Stealth Dim')">
+<span class="w-2.5 h-2.5 rounded-full bg-slate-700"></span>
+<span>Stealth</span>
+</button>
+</div>
+</div>
+<!-- Dynamic FPS Telemetry Bar -->
+<div class="mt-4 pt-4 border-t border-outline-variant/30" id="telemetry-benchmarks">
+<p class="text-label-sm font-label-sm text-on-surface-variant mb-2">DYNAMIC FPS TELEMETRY (ESTIMATED IN ESPORTS / AAA)</p>
+<div class="grid grid-cols-3 gap-2">
+<div class="p-2 rounded bg-surface-container-lowest/80 border border-outline-variant/30 text-center">
+<span class="block text-[11px] font-label-sm text-on-surface-variant">1080P COMPETITIVE</span>
+<span class="text-headline-sm font-headline-sm font-bold text-primary-container" id="fps-1080">240+ FPS</span>
+</div>
+<div class="p-2 rounded bg-surface-container-lowest/80 border border-outline-variant/30 text-center">
+<span class="block text-[11px] font-label-sm text-on-surface-variant">1440P QUAD-HD</span>
+<span class="text-headline-sm font-headline-sm font-bold text-primary" id="fps-1440">145 FPS</span>
+</div>
+<div class="p-2 rounded bg-surface-container-lowest/80 border border-outline-variant/30 text-center">
+<span class="block text-[11px] font-label-sm text-on-surface-variant">4K ULTRA GRAPHICS</span>
+<span class="text-headline-sm font-headline-sm font-bold text-secondary" id="fps-4k">82 FPS</span>
+</div>
+</div>
+</div>
+<!-- Real-Time Wattage / Power Load Bar -->
+<div class="mt-4 pt-4 border-t border-outline-variant/30">
+<div class="flex items-center justify-between text-label-sm font-label-sm mb-1.5">
+<span class="text-on-surface-variant">THERMAL &amp; POWER DRAW</span>
+<span class="text-primary-container font-mono font-bold" id="wattage-indicator">520W / 750W GOLD</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary-container via-surface-tint to-primary-container transition-all duration-300" id="wattage-bar-fill" style="width: 69%;"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Hardware Category Tabs & Selection Cards -->
+<div class="lg:col-span-7 space-y-6">
+<!-- Category Horizontal Scroll Strip -->
+<div class="bg-surface-container-low/90 backdrop-blur-xl p-2 rounded-lg border border-outline-variant/40 overflow-x-auto custom-scroll flex items-center gap-1.5">
+<button class="category-tab active-cat-tab px-3 py-2 rounded text-label-md font-label-md whitespace-nowrap flex items-center gap-1.5 bg-primary-container text-on-primary-fixed font-bold" id="tab-btn-cpu" onclick="setActiveTab('cpu')">
+<span class="material-symbols-outlined text-[16px]" data-icon="memory">memory</span>
+<span>Processor</span>
+<span class="text-xs">✓</span>
+</button>
+<button class="category-tab px-3 py-2 rounded text-label-md font-label-md whitespace-nowrap flex items-center gap-1.5 text-on-surface-variant hover:text-on-surface bg-surface-container-high/40" id="tab-btn-gpu" onclick="setActiveTab('gpu')">
+<span class="material-symbols-outlined text-[16px]" data-icon="videogame_asset">videogame_asset</span>
+<span>Graphics Card</span>
+<span class="text-xs">✓</span>
+</button>
+<button class="category-tab px-3 py-2 rounded text-label-md font-label-md whitespace-nowrap flex items-center gap-1.5 text-on-surface-variant hover:text-on-surface bg-surface-container-high/40" id="tab-btn-ram" onclick="setActiveTab('ram')">
+<span class="material-symbols-outlined text-[16px]" data-icon="developer_board">developer_board</span>
+<span>Memory</span>
+<span class="text-xs">✓</span>
+</button>
+<button class="category-tab px-3 py-2 rounded text-label-md font-label-md whitespace-nowrap flex items-center gap-1.5 text-on-surface-variant hover:text-on-surface bg-surface-container-high/40" id="tab-btn-storage" onclick="setActiveTab('storage')">
+<span class="material-symbols-outlined text-[16px]" data-icon="hard_drive">hard_drive</span>
+<span>Storage</span>
+<span class="text-xs">✓</span>
+</button>
+<button class="category-tab px-3 py-2 rounded text-label-md font-label-md whitespace-nowrap flex items-center gap-1.5 text-on-surface-variant hover:text-on-surface bg-surface-container-high/40" id="tab-btn-cooling" onclick="setActiveTab('cooling')">
+<span class="material-symbols-outlined text-[16px]" data-icon="mode_fan">mode_fan</span>
+<span>Cooling</span>
+<span class="text-xs">✓</span>
+</button>
+<button class="category-tab px-3 py-2 rounded text-label-md font-label-md whitespace-nowrap flex items-center gap-1.5 text-on-surface-variant hover:text-on-surface bg-surface-container-high/40" id="tab-btn-psu" onclick="setActiveTab('psu')">
+<span class="material-symbols-outlined text-[16px]" data-icon="power">power</span>
+<span>Power Supply</span>
+<span class="text-xs">✓</span>
+</button>
+<button class="category-tab px-3 py-2 rounded text-label-md font-label-md whitespace-nowrap flex items-center gap-1.5 text-on-surface-variant hover:text-on-surface bg-surface-container-high/40" id="tab-btn-os" onclick="setActiveTab('os')">
+<span class="material-symbols-outlined text-[16px]" data-icon="terminal">terminal</span>
+<span>Operating System</span>
+<span class="text-xs">✓</span>
+</button>
+</div>
+<!-- Component Panels Container -->
+<div class="bg-surface-container-low/75 backdrop-blur-2xl rounded-lg p-6 border border-outline-variant/40 shadow-[0_8px_32px_rgba(0,0,0,0.7)] min-h-[460px]">
+<!-- PROCESSOR (CPU) PANEL -->
+<div class="hardware-panel space-y-4" id="panel-cpu">
+<div class="flex items-center justify-between pb-2 border-b border-outline-variant/30">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">SELECT PROCESSOR (CPU)</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">High-performance silicon for gaming, multithreading &amp; esports</p>
+</div>
+<span class="text-label-sm font-label-sm text-primary-container px-2 py-0.5 rounded bg-surface-container border border-primary-container/30">SOCKET LGA1700 / AM5</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- CPU 1: i5 14400F -->
+<div class="hardware-card cursor-pointer p-4 rounded-lg bg-surface-container/70 border border-outline-variant/40 hover:border-primary-container/60 transition-all relative" id="card-cpu-1" onclick="selectHardware('cpu', 'cpu-1', 0, 'Intel Core i5-14400F (10 Cores, up to 4.7GHz)', 65)">
+<div class="flex items-start justify-between">
+<span class="text-label-sm font-label-sm px-2 py-0.5 rounded bg-surface-container-high text-primary-container">BASE SPEC</span>
+<span class="radio-dot w-4 h-4 rounded-full border border-primary-container flex items-center justify-center"></span>
+</div>
+<h4 class="font-headline-sm text-[16px] font-bold text-on-surface mt-2">Intel Core i5-14400F</h4>
+<p class="text-[12px] text-on-surface-variant">10 Cores (6P + 4E) • 16 Threads • Up to 4.7GHz Turbo</p>
+<div class="mt-3 pt-2 border-t border-outline-variant/20 flex items-center justify-between text-label-md font-label-md">
+<span class="text-on-surface-variant">Base Config</span>
+<span class="text-primary-container font-bold">+R 0.00</span>
+</div>
+</div>
+<!-- CPU 2: i7 14700KF -->
+<div class="hardware-card cursor-pointer p-4 rounded-lg bg-surface-container/70 border border-primary-container glow-cyan-card transition-all relative" id="card-cpu-2" onclick="selectHardware('cpu', 'cpu-2', 3400, 'Intel Core i7-14700KF (20 Cores, up to 5.6GHz)', 125)">
+<div class="flex items-start justify-between">
+<span class="text-label-sm font-label-sm px-2 py-0.5 rounded bg-secondary-container/20 text-secondary border border-secondary-container/40">GAMING SWEET SPOT</span>
+<span class="radio-dot w-4 h-4 rounded-full border border-primary-container bg-primary-container flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-on-primary-fixed"></span>
+</span>
+</div>
+<h4 class="font-headline-sm text-[16px] font-bold text-on-surface mt-2">Intel Core i7-14700KF</h4>
+<p class="text-[12px] text-on-surface-variant">20 Cores (8P + 12E) • 28 Threads • Up to 5.6GHz Turbo</p>
+<div class="mt-3 pt-2 border-t border-outline-variant/20 flex items-center justify-between text-label-md font-label-md">
+<span class="text-on-surface-variant">Upgrade Cost</span>
+<span class="text-primary-container font-bold">+R 3,400.00</span>
+</div>
+</div>
+<!-- CPU 3: Ryzen 7 7800X3D -->
+<div class="hardware-card cursor-pointer p-4 rounded-lg bg-surface-container/70 border border-outline-variant/40 hover:border-primary-container/60 transition-all relative" id="card-cpu-3" onclick="selectHardware('cpu', 'cpu-3', 4200, 'AMD Ryzen 7 7800X3D (3D V-Cache, up to 5.0GHz)', 120)">
+<div class="flex items-start justify-between">
+<span class="text-label-sm font-label-sm px-2 py-0.5 rounded bg-surface-container-high text-primary-container">3D V-CACHE ESPORTS</span>
+<span class="radio-dot w-4 h-4 rounded-full border border-primary-container flex items-center justify-center"></span>
+</div>
+<h4 class="font-headline-sm text-[16px] font-bold text-on-surface mt-2">AMD Ryzen 7 7800X3D</h4>
+<p class="text-[12px] text-on-surface-variant">8 Cores • 16 Threads • 104MB Total Cache • 5.0GHz</p>
+<div class="mt-3 pt-2 border-t border-outline-variant/20 flex items-center justify-between text-label-md font-label-md">
+<span class="text-on-surface-variant">Upgrade Cost</span>
+<span class="text-primary-container font-bold">+R 4,200.00</span>
+</div>
+</div>
+<!-- CPU 4: i9 14900KS -->
+<div class="hardware-card cursor-pointer p-4 rounded-lg bg-surface-container/70 border border-outline-variant/40 hover:border-primary-container/60 transition-all relative" id="card-cpu-4" onclick="selectHardware('cpu', 'cpu-4', 8900, 'Intel Core i9-14900KS (24 Cores, 6.2GHz Unlocked)', 150)">
+<div class="flex items-start justify-between">
+<span class="text-label-sm font-label-sm px-2 py-0.5 rounded bg-surface-container-high text-primary-container">ULTRA FLAGSHIP</span>
+<span class="radio-dot w-4 h-4 rounded-full border border-primary-container flex items-center justify-center"></span>
+</div>
+<h4 class="font-headline-sm text-[16px] font-bold text-on-surface mt-2">Intel Core i9-14900KS</h4>
+<p class="text-[12px] text-on-surface-variant">24 Cores (8P + 16E) • 32 Threads • 6.2GHz Max Frequency</p>
+<div class="mt-3 pt-2 border-t border-outline-variant/20 flex items-center justify-between text-label-md font-label-md">
+<span class="text-on-surface-variant">Upgrade Cost</span>
+<span class="text-primary-container font-bold">+R 8,900.00</span>
+</div>
+</div>
+</div>
+</div>
+<!-- GRAPHICS (GPU) PANEL -->
+<div class="hardware-panel hidden space-y-4" id="panel-gpu">
+<div class="flex items-center justify-between pb-2 border-b border-outline-variant/30">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">SELECT GRAPHICS CARD (GPU)</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Powered by NVIDIA Ada Lovelace &amp; DLSS 3.5 Frame Generation</p>
+</div>
+<span class="text-label-sm font-label-sm text-primary-container px-2 py-0.5 rounded bg-surface-container border border-primary-container/30">GEFORCE RTX 40 SERIES</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- GPU 1 -->
+<div class="hardware-card cursor-pointer p-4 rounded-lg bg-surface-container/70 border border-outline-variant/40 hover:border-primary-container/60 transition-all relative" id="card-gpu-1" onclick="selectHardware('gpu', 'gpu-1', 0, 'NVIDIA RTX 4060 8GB GDDR6', 115)">
+<div class="flex items-start justify-between">
+<span class="text-label-sm font-label-sm px-2 py-0.5 rounded bg-surface-container-high text-primary-container">1080P PRO</span>
+<span class="radio-dot w-4 h-4 rounded-full border border-primary-container flex items-center justify-center"></span>
+</div>
+<h4 class="font-headline-sm text-[16px] font-bold text-on-surface mt-2">NVIDIA RTX 4060 8GB</h4>
+<p class="text-[12px] text-on-surface-variant">3,072 CUDA Cores • DLSS 3 • 115W TGP Low Draw</p>
+<div class="mt-3 pt-2 border-t border-outline-variant/20 flex items-center justify-between text-label-md font-label-md">
+<span class="text-on-surface-variant">Base Config</span>
+<span class="text-primary-container font-bold">+R 0.00</span>
+</div>
+</div>
+<!-- GPU 2 -->
+<div class="hardware-card cursor-pointer p-4 rounded-lg bg-surface-container/70 border border-outline-variant/40 hover:border-primary-container/60 transition-all relative" id="card-gpu-2" onclick="selectHardware('gpu', 'gpu-2', 4800, 'NVIDIA RTX 4070 Super 12GB GDDR6X', 220)">
+<div class="flex items-start justify-between">
+<span class="text-label-sm font-label-sm px-2 py-0.5 rounded bg-surface-container-high text-primary-container">1440P ELITE</span>
+<span class="radio-dot w-4 h-4 rounded-full border border-primary-container flex items-center justify-center"></span>
+</div>
+<h4 class="font-headline-sm text-[16px] font-bold text-on-surface mt-2">RTX 4070 Super 12GB</h4>
+<p class="text-[12px] text-on-surface-variant">7,168 CUDA Cores • GDDR6X • Ray Tracing Overdrive</p>
+<div class="mt-3 pt-2 border-t border-outline-variant/20 flex items-center justify-between text-label-md font-label-md">
+<span class="text-on-surface-variant">Upgrade Cost</span>
+<span class="text-primary-container font-bold">+R 4,800.00</span>
+</div>
+</div>
+<!-- GPU 3 (Default selected) -->
+<div class="hardware-card cursor-pointer p-4 rounded-lg bg-surface-container/70 border border-primary-container glow-cyan-card transition-all relative" id="card-gpu-3" onclick="selectHardware('gpu', 'gpu-3', 8500, 'NVIDIA RTX 4070 Ti Super 16GB GDDR6X', 285)">
+<div class="flex items-start justify-between">
+<span class="text-label-sm font-label-sm px-2 py-0.5 rounded bg-secondary-container/20 text-secondary border border-secondary-container/40">AURORA BUILD SPEC</span>
+<span class="radio-dot w-4 h-4 rounded-full border border-primary-container bg-primary-container flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-on-primary-fixed"></span>
+</span>
+</div>
+<h4 class="font-headline-sm text-[16px] font-bold text-on-surface mt-2">RTX 4070 Ti Super 16GB</h4>
+<p class="text-[12px] text-on-surface-variant">8,448 CUDA Cores • 256-bit Bus • 16GB VRAM for 4K / AI</p>
+<div class="mt-3 pt-2 border-t border-outline-variant/20 flex items-center justify-between text-label-md font-label-md">
+<span class="text-on-surface-variant">Upgrade Cost</span>
+<span class="text-primary-container font-bold">+R 8,500.00</span>
+</div>
+</div>
+<!-- GPU 4 -->
+<div class="hardware-card cursor-pointer p-4 rounded-lg bg-surface-container/70 border border-outline-variant/40 hover:border-primary-container/60 transition-all relative" id="card-gpu-4" onclick="selectHardware('gpu', 'gpu-4', 14200, 'NVIDIA RTX 4080 Super 16GB GDDR6X', 320)">
+<div class="flex items-start justify-between">
+<span class="text-label-sm font-label-sm px-2 py-0.5 rounded bg-surface-container-high text-primary-container">EXTREME 4K</span>
+<span class="radio-dot w-4 h-4 rounded-full border border-primary-container flex items-center justify-center"></span>
+</div>
+<h4 class="font-headline-sm text-[16px] font-bold text-on-surface mt-2">RTX 4080 Super 16GB</h4>
+<p class="text-[12px] text-on-surface-variant">10,240 CUDA Cores • Unlocked 4K 144Hz Native Ultra</p>
+<div class="mt-3 pt-2 border-t border-outline-variant/20 flex items-center justify-between text-label-md font-label-md">
+<span class="text-on-surface-variant">Upgrade Cost</span>
+<span class="text-primary-container font-bold">+R 14,200.00</span>
+</div>
+</div>
+</div>
+</div>
+<!-- MEMORY (RAM) PANEL -->
+<div class="hardware-panel hidden space-y-4" id="panel-ram">
+<div class="flex items-center justify-between pb-2 border-b border-outline-variant/30">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">SELECT MEMORY (DDR5 RAM)</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Dual-channel overclocked low-latency DDR5 modules with addressable RGB</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="hardware-card cursor-pointer p-4 rounded-lg bg-surface-container/70 border border-outline-variant/40 hover:border-primary-container/60 transition-all" id="card-ram-1" onclick="selectHardware('ram', 'ram-1', 0, '16GB DDR5 5600MHz RGB (2x8GB)', 10)">
+<span class="text-label-sm font-label-sm px-2 py-0.5 rounded bg-surface-container-high text-primary-container">STANDARD</span>
+<h4 class="font-headline-sm text-[16px] font-bold text-on-surface mt-2">16GB DDR5 5600MHz</h4>
+<p class="text-[12px] text-on-surface-variant">Dual Channel RGB Sync</p>
+<div class="mt-4 pt-2 border-t border-outline-variant/20 text-primary-container font-bold text-label-md font-label-md">+R 0.00</div>
+</div>
+<div class="hardware-card cursor-pointer p-4 rounded-lg bg-surface-container/70 border border-primary-container glow-cyan-card transition-all" id="card-ram-2" onclick="selectHardware('ram', 'ram-2', 1450, '32GB DDR5 6000MHz RGB (2x16GB)', 15)">
+<span class="text-label-sm font-label-sm px-2 py-0.5 rounded bg-secondary-container/20 text-secondary">RECOMMENDED</span>
+<h4 class="font-headline-sm text-[16px] font-bold text-on-surface mt-2">32GB DDR5 6000MHz</h4>
+<p class="text-[12px] text-on-surface-variant">CL30 Low-Latency Gaming Sweetspot</p>
+<div class="mt-4 pt-2 border-t border-outline-variant/20 text-primary-container font-bold text-label-md font-label-md">+R 1,450.00</div>
+</div>
+<div class="hardware-card cursor-pointer p-4 rounded-lg bg-surface-container/70 border border-outline-variant/40 hover:border-primary-container/60 transition-all" id="card-ram-3" onclick="selectHardware('ram', 'ram-3', 3600, '64GB DDR5 6400MHz High-Speed (2x32GB)', 20)">
+<span class="text-label-sm font-label-sm px-2 py-0.5 rounded bg-surface-container-high text-primary-container">CREATOR / HEAVY</span>
+<h4 class="font-headline-sm text-[16px] font-bold text-on-surface mt-2">64GB DDR5 6400MHz</h4>
+<p class="text-[12px] text-on-surface-variant">XMP 3.0 / EXPO Tuned</p>
+<div class="mt-4 pt-2 border-t border-outline-variant/20 text-primary-container font-bold text-label-md font-label-md">+R 3,600.00</div>
+</div>
+</div>
+</div>
+<!-- STORAGE PANEL -->
+<div class="hardware-panel hidden space-y-4" id="panel-storage">
+<div class="flex items-center justify-between pb-2 border-b border-outline-variant/30">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">SOLID STATE STORAGE (M.2 NVMe)</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">PCIe Gen4 blisteringly fast read/write speeds for instant game launches</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="hardware-card cursor-pointer p-4 rounded-lg bg-surface-container/70 border border-outline-variant/40 hover:border-primary-container/60 transition-all" id="card-storage-1" onclick="selectHardware('storage', 'storage-1', 0, '1TB NVMe Gen4 SSD (Up to 5000MB/s)', 5)">
+<span class="text-label-sm font-label-sm px-2 py-0.5 rounded bg-surface-container-high text-primary-container">BASE</span>
+<h4 class="font-headline-sm text-[16px] font-bold text-on-surface mt-2">1TB NVMe Gen4</h4>
+<p class="text-[12px] text-on-surface-variant">5,000 MB/s Read Speed</p>
+<div class="mt-4 pt-2 border-t border-outline-variant/20 text-primary-container font-bold text-label-md font-label-md">+R 0.00</div>
+</div>
+<div class="hardware-card cursor-pointer p-4 rounded-lg bg-surface-container/70 border border-primary-container glow-cyan-card transition-all" id="card-storage-2" onclick="selectHardware('storage', 'storage-2', 1750, '2TB Samsung 990 Pro Gen4 (7450MB/s)', 8)">
+<span class="text-label-sm font-label-sm px-2 py-0.5 rounded bg-secondary-container/20 text-secondary">POPULAR</span>
+<h4 class="font-headline-sm text-[16px] font-bold text-on-surface mt-2">2TB Samsung 990 Pro</h4>
+<p class="text-[12px] text-on-surface-variant">7,450 MB/s Read • Heatsink Included</p>
+<div class="mt-4 pt-2 border-t border-outline-variant/20 text-primary-container font-bold text-label-md font-label-md">+R 1,750.00</div>
+</div>
+<div class="hardware-card cursor-pointer p-4 rounded-lg bg-surface-container/70 border border-outline-variant/40 hover:border-primary-container/60 transition-all" id="card-storage-3" onclick="selectHardware('storage', 'storage-3', 4100, '4TB Kingston Fury Renegade Gen4 SSD', 10)">
+<span class="text-label-sm font-label-sm px-2 py-0.5 rounded bg-surface-container-high text-primary-container">VAULT ARCHIVE</span>
+<h4 class="font-headline-sm text-[16px] font-bold text-on-surface mt-2">4TB Kingston Fury</h4>
+<p class="text-[12px] text-on-surface-variant">Ultra capacity for full 100+ game library</p>
+<div class="mt-4 pt-2 border-t border-outline-variant/20 text-primary-container font-bold text-label-md font-label-md">+R 4,100.00</div>
+</div>
+</div>
+</div>
+<!-- COOLING PANEL -->
+<div class="hardware-panel hidden space-y-4" id="panel-cooling">
+<div class="flex items-center justify-between pb-2 border-b border-outline-variant/30">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">THERMAL CRYO COOLING</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Aurora-grade liquid closed loop with electric cyan illumination</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="hardware-card cursor-pointer p-4 rounded-lg bg-surface-container/70 border border-outline-variant/40 hover:border-primary-container/60 transition-all" id="card-cool-1" onclick="selectHardware('cooling', 'cool-1', 0, '240mm Aurora Dual Fan AIO Liquid Cooler', 15)">
+<span class="text-label-sm font-label-sm px-2 py-0.5 rounded bg-surface-container-high text-primary-container">STANDARD</span>
+<h4 class="font-headline-sm text-[16px] font-bold text-on-surface mt-2">240mm Aurora Dual Fan AIO</h4>
+<p class="text-[12px] text-on-surface-variant">Dual 120mm PWM Fluid Dynamic Bearing Fans</p>
+<div class="mt-4 pt-2 border-t border-outline-variant/20 text-primary-container font-bold text-label-md font-label-md">+R 0.00</div>
+</div>
+<div class="hardware-card cursor-pointer p-4 rounded-lg bg-surface-container/70 border border-primary-container glow-cyan-card transition-all" id="card-cool-2" onclick="selectHardware('cooling', 'cool-2', 1200, '360mm Triple Fan Cryo Liquid Cooler with LCD Pump Display', 25)">
+<span class="text-label-sm font-label-sm px-2 py-0.5 rounded bg-secondary-container/20 text-secondary">OVERCLOCKER CHOICE</span>
+<h4 class="font-headline-sm text-[16px] font-bold text-on-surface mt-2">360mm Triple Cryo Cooler</h4>
+<p class="text-[12px] text-on-surface-variant">Triple 120mm High Static Pressure Fans + LCD Pump Telemetry</p>
+<div class="mt-4 pt-2 border-t border-outline-variant/20 text-primary-container font-bold text-label-md font-label-md">+R 1,200.00</div>
+</div>
+</div>
+</div>
+<!-- PSU PANEL -->
+<div class="hardware-panel hidden space-y-4" id="panel-psu">
+<div class="flex items-center justify-between pb-2 border-b border-outline-variant/30">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">POWER SUPPLY (PSU)</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Continuous clean wattage certified for South African voltage reliability</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="hardware-card cursor-pointer p-4 rounded-lg bg-surface-container/70 border border-primary-container glow-cyan-card transition-all" id="card-psu-1" onclick="selectHardware('psu', 'psu-1', 0, '750W 80+ Gold Fully Modular ATX', 750)">
+<span class="text-label-sm font-label-sm px-2 py-0.5 rounded bg-surface-container-high text-primary-container">750W GOLD</span>
+<h4 class="font-headline-sm text-[16px] font-bold text-on-surface mt-2">750W 80+ Gold Modular</h4>
+<p class="text-[12px] text-on-surface-variant">Sufficient for RTX 4070 / 4070 Ti</p>
+<div class="mt-4 pt-2 border-t border-outline-variant/20 text-primary-container font-bold text-label-md font-label-md">+R 0.00</div>
+</div>
+<div class="hardware-card cursor-pointer p-4 rounded-lg bg-surface-container/70 border border-outline-variant/40 hover:border-primary-container/60 transition-all" id="card-psu-2" onclick="selectHardware('psu', 'psu-2', 950, '850W 80+ Platinum Fully Modular ATX 3.0', 850)">
+<span class="text-label-sm font-label-sm px-2 py-0.5 rounded bg-surface-container-high text-primary-container">850W PLATINUM</span>
+<h4 class="font-headline-sm text-[16px] font-bold text-on-surface mt-2">850W 80+ Platinum</h4>
+<p class="text-[12px] text-on-surface-variant">Includes dedicated 12VHPWR Cable</p>
+<div class="mt-4 pt-2 border-t border-outline-variant/20 text-primary-container font-bold text-label-md font-label-md">+R 950.00</div>
+</div>
+<div class="hardware-card cursor-pointer p-4 rounded-lg bg-surface-container/70 border border-outline-variant/40 hover:border-primary-container/60 transition-all" id="card-psu-3" onclick="selectHardware('psu', 'psu-3', 2100, '1000W ATX 3.0 Titanium Ultra Silent PSU', 1000)">
+<span class="text-label-sm font-label-sm px-2 py-0.5 rounded bg-surface-container-high text-primary-container">1000W TITANIUM</span>
+<h4 class="font-headline-sm text-[16px] font-bold text-on-surface mt-2">1000W ATX 3.0 Titanium</h4>
+<p class="text-[12px] text-on-surface-variant">Future-proof monster capacity</p>
+<div class="mt-4 pt-2 border-t border-outline-variant/20 text-primary-container font-bold text-label-md font-label-md">+R 2,100.00</div>
+</div>
+</div>
+</div>
+<!-- OPERATING SYSTEM PANEL -->
+<div class="hardware-panel hidden space-y-4" id="panel-os">
+<div class="flex items-center justify-between pb-2 border-b border-outline-variant/30">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">OPERATING SYSTEM &amp; SOFTWARE</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Pre-installed, licensed, and fully updated with zero bloatware</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="hardware-card cursor-pointer p-4 rounded-lg bg-surface-container/70 border border-primary-container glow-cyan-card transition-all" id="card-os-1" onclick="selectHardware('os', 'os-1', 0, 'Windows 11 Home 64-bit Genuine Digital Key', 0)">
+<span class="text-label-sm font-label-sm px-2 py-0.5 rounded bg-surface-container-high text-primary-container">DEFAULT</span>
+<h4 class="font-headline-sm text-[16px] font-bold text-on-surface mt-2">Windows 11 Home 64-bit</h4>
+<p class="text-[12px] text-on-surface-variant">Fully configured with GPU drivers, DirectX, and Steam ready.</p>
+<div class="mt-4 pt-2 border-t border-outline-variant/20 text-primary-container font-bold text-label-md font-label-md">+R 0.00</div>
+</div>
+<div class="hardware-card cursor-pointer p-4 rounded-lg bg-surface-container/70 border border-outline-variant/40 hover:border-primary-container/60 transition-all" id="card-os-2" onclick="selectHardware('os', 'os-2', 650, 'Windows 11 Pro 64-bit with BitLocker &amp; Remote Desktop', 0)">
+<span class="text-label-sm font-label-sm px-2 py-0.5 rounded bg-surface-container-high text-primary-container">PRO ENTERPRISE</span>
+<h4 class="font-headline-sm text-[16px] font-bold text-on-surface mt-2">Windows 11 Pro 64-bit</h4>
+<p class="text-[12px] text-on-surface-variant">Adds Hyper-V, Windows Sandbox &amp; BitLocker drive encryption.</p>
+<div class="mt-4 pt-2 border-t border-outline-variant/20 text-primary-container font-bold text-label-md font-label-md">+R 650.00</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Next / Previous Component Helper Navigator -->
+<div class="flex items-center justify-between pt-2">
+<button class="px-4 py-2 rounded bg-surface-container border border-outline-variant/40 text-on-surface-variant hover:text-on-surface hover:border-primary-container text-label-md font-label-md flex items-center gap-1.5 transition-all" onclick="navigateTab(-1)">
+<span class="material-symbols-outlined text-[16px]" data-icon="arrow_back">arrow_back</span>
+<span>Previous Part</span>
+</button>
+<button class="px-5 py-2 rounded bg-primary-container text-on-primary-fixed font-bold text-label-md font-label-md hover:brightness-110 active:scale-95 transition-all flex items-center gap-1.5" onclick="navigateTab(1)">
+<span>Next Hardware Node</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- STOREFRONT PRE-BUILT RIG SHOWCASE SECTION -->
+<section class="py-16 px-margin-sm md:px-margin bg-surface-container-lowest/90 border-t border-outline-variant/30 scroll-mt-20" id="prebuilt-showcase">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+<div>
+<div class="inline-flex items-center gap-2 text-primary-container font-label-sm text-label-sm uppercase tracking-widest mb-1">
+<span class="material-symbols-outlined text-[16px]" data-icon="bolt">bolt</span>
+<span>READY TO SHIP NATIONWIDE</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold text-on-surface">
+            POPULAR PRE-BUILT CONFIGURATIONS
+          </h2>
+<p class="text-on-surface-variant font-body-md text-body-md mt-1">
+            Plug-and-play powerhouse rigs bench-tested for 48 hours before courier dispatch across South Africa.
+          </p>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-label-sm font-label-sm text-emerald-400 flex items-center gap-1 bg-emerald-950/60 border border-emerald-500/30 px-3 py-1.5 rounded">
+<span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+<span>All units in physical warehouse stock</span>
+</span>
+</div>
+</div>
+<!-- Rig Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Pre-built 1: Apex Titan Esports -->
+<div class="bg-surface-container-low/80 backdrop-blur-xl border border-outline-variant/40 rounded-lg p-5 flex flex-col justify-between hover:border-primary-container/80 transition-all group">
+<div>
+<div class="relative w-full aspect-video rounded-md overflow-hidden bg-surface-container-lowest border border-outline-variant/30 mb-4">
+<img alt="BudgetTech Apex Titan ZA" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Front angled high-tech dark PC gaming desktop tower with glowing blue mesh intake fans stamped with BudgetTechZA logo on a dark modern gaming desk with glowing monitor background in Johannesburg studio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDuz0OIHsUy_I8lpnCKPSECp4-dpve3modGJcpNKYaM52CLQskN7w8sCXXL0qR09hlbHxt68yQlC_lmMFhk4Jnir2UzWhabwAKWbcyp9g0L9U1VyYIwMI4DNgvfWVSbPz4eEiXfai6ZRaKWLM5FFBGaPcv8lTm8GFP-oyJZwxsBT6M2Y-nPQDuRnmEfSaIrECNXuRCU_H_6NHvX2rS4evtzVfzbOdynti51KC_AYY"/>
+<span class="absolute top-2 left-2 bg-secondary-container/80 backdrop-blur text-on-secondary-container text-[10px] font-label-sm px-2 py-0.5 rounded font-bold">
+                ESPORTS FAVORITE
+              </span>
+</div>
+<h3 class="font-headline-sm text-[18px] font-bold text-on-surface">APEX TITAN ZA ESPORTS</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">Ryzen 5 7600X • RTX 4060 8GB • 16GB DDR5 5600 • 1TB Gen4</p>
+<ul class="mt-3 space-y-1 text-[12px] text-on-surface-variant font-body-sm border-t border-outline-variant/20 pt-3">
+<li class="flex items-center gap-2">
+<span class="text-primary-container text-xs">✓</span> Warzone &amp; Apex: 165+ FPS @ 1080p
+              </li>
+<li class="flex items-center gap-2">
+<span class="text-primary-container text-xs">✓</span> 650W 80+ Bronze Certified
+              </li>
+<li class="flex items-center gap-2">
+<span class="text-primary-container text-xs">✓</span> 3-Year Carry-in Warranty Included
+              </li>
+</ul>
+</div>
+<div class="mt-6 pt-3 border-t border-outline-variant/30 flex items-center justify-between">
+<div>
+<span class="text-[10px] block font-label-sm text-on-surface-variant">DIRECT ZAR PRICE</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary-container">R 16,999</span>
+</div>
+<button class="px-4 py-2 rounded bg-primary-container text-on-primary-fixed text-label-md font-label-md font-bold uppercase hover:brightness-110 active:scale-95 transition-all" onclick="loadRigPreset('titan')">
+              Order Preset
+            </button>
+</div>
+</div>
+<!-- Pre-built 2: Aurora Vortex R16 Flagship (Center Highlight) -->
+<div class="bg-surface-container-low/90 backdrop-blur-xl border-2 border-primary-container rounded-lg p-5 flex flex-col justify-between glow-cyan-card relative group">
+<div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary-container text-on-primary-fixed text-[10px] font-label-sm px-3 py-0.5 rounded font-bold uppercase tracking-wider">
+            MOST POPULAR ENTHUSIAST RIG
+          </div>
+<div>
+<div class="relative w-full aspect-video rounded-md overflow-hidden bg-surface-container-lowest border border-outline-variant/30 mb-4 mt-1">
+<img alt="Aurora Vortex R16 Enthusiast" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Alienware Aurora R16 inspired custom liquid cooled flagship rig in deep midnight finish with neon cyan loop tubes glowing under soft dark lighting in South African hardware engineering workshop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgfkpjtk9amPV0QyPEHT_LQZWSUya5ur-5137vEMZPZ4sIuOpt7EsMG-ELGpOfbfmgBG6WiakaaVkGDp-GRDkDuHw7BeTEwuHuNyOj3rdUjIzcQHe91atbrEo1bqoxNt9kVLQCkxIUrflYjUfoQId8F9ZSQFNh5Dh-3YPBAaYaVWesSZugeLRtA4d_u5vRAFc5RA_5-fC8c5Thl8rdDAnnlbfIx0o9Jfs-f7wU-Rg"/>
+<span class="absolute top-2 left-2 bg-primary-container text-on-primary-fixed text-[10px] font-label-sm px-2 py-0.5 rounded font-bold">
+                AURORA CYRO LOOP
+              </span>
+</div>
+<h3 class="font-headline-sm text-[18px] font-bold text-on-surface">AURORA VORTEX R16 ENTHUSIAST</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">Intel i7-14700KF • RTX 4070 Ti Super 16GB • 32GB DDR5 6000 • 2TB Gen4</p>
+<ul class="mt-3 space-y-1 text-[12px] text-on-surface-variant font-body-sm border-t border-outline-variant/20 pt-3">
+<li class="flex items-center gap-2">
+<span class="text-primary-container text-xs">✓</span> Cyberpunk Overdrive 1440p: 110+ FPS
+              </li>
+<li class="flex items-center gap-2">
+<span class="text-primary-container text-xs">✓</span> 360mm Cryo Liquid Cooler with LCD
+              </li>
+<li class="flex items-center gap-2">
+<span class="text-primary-container text-xs">✓</span> Free Nationwide Insured Freight
+              </li>
+</ul>
+</div>
+<div class="mt-6 pt-3 border-t border-outline-variant/30 flex items-center justify-between">
+<div>
+<span class="text-[10px] block font-label-sm text-on-surface-variant">DIRECT ZAR PRICE</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary-container">R 28,499</span>
+</div>
+<button class="px-4 py-2 rounded bg-primary-container text-on-primary-fixed text-label-md font-label-md font-bold uppercase hover:brightness-110 active:scale-95 transition-all" onclick="loadRigPreset('aurora')">
+              Customize Rig
+            </button>
+</div>
+</div>
+<!-- Pre-built 3: Workstation Studio God-Tier -->
+<div class="bg-surface-container-low/80 backdrop-blur-xl border border-outline-variant/40 rounded-lg p-5 flex flex-col justify-between hover:border-primary-container/80 transition-all group">
+<div>
+<div class="relative w-full aspect-video rounded-md overflow-hidden bg-surface-container-lowest border border-outline-variant/30 mb-4">
+<img alt="Krypton Studio Workstation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Monolithic matte black full-tower computing rig with subtle glacier white internal lighting tubes and industrial steel fittings built for 3D VFX rendering and ultra gaming." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGV5gCFg3WuLJnkpy19EEgMxnfy7bs6CZdwfIYO7-O49YBEXpjqID1d2K3uazFITjisxxcBsvdSagIOp9WGwX5itHpTNJfExOOukFKdZDv9Lk-BDCmnHF0mW0DY-pES6AfOfTAFUyns0syP0xcLzRYJ_avVmv7JAcXiGWGrOSbHwGkCsKSi2gqLUOCMiW-XXvWWht-IC-z721rb_j92AO0L_AiDLz_r9w9ydpppVM"/>
+<span class="absolute top-2 left-2 bg-surface-container-high text-primary-container text-[10px] font-label-sm px-2 py-0.5 rounded font-bold">
+                STUDIO &amp; WORK
+              </span>
+</div>
+<h3 class="font-headline-sm text-[18px] font-bold text-on-surface">KRYPTON PRO CREATOR RIG</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">i9-14900KS • RTX 4080 Super 16GB • 64GB DDR5 6400 • 4TB Storage</p>
+<ul class="mt-3 space-y-1 text-[12px] text-on-surface-variant font-body-sm border-t border-outline-variant/20 pt-3">
+<li class="flex items-center gap-2">
+<span class="text-primary-container text-xs">✓</span> 8K RAW DaVinci Resolve &amp; Unreal Engine 5
+              </li>
+<li class="flex items-center gap-2">
+<span class="text-primary-container text-xs">✓</span> 1000W ATX 3.0 Titanium PSU
+              </li>
+<li class="flex items-center gap-2">
+<span class="text-primary-container text-xs">✓</span> Windows 11 Pro Pre-Activated
+              </li>
+</ul>
+</div>
+<div class="mt-6 pt-3 border-t border-outline-variant/30 flex items-center justify-between">
+<div>
+<span class="text-[10px] block font-label-sm text-on-surface-variant">DIRECT ZAR PRICE</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary-container">R 49,999</span>
+</div>
+<button class="px-4 py-2 rounded bg-primary-container text-on-primary-fixed text-label-md font-label-md font-bold uppercase hover:brightness-110 active:scale-95 transition-all" onclick="loadRigPreset('krypton')">
+              Order Preset
+            </button>
+</div>
+</div>
+</div>
+<!-- Trust Badges Bar -->
+<div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 p-6 rounded-lg bg-surface-container-low/60 border border-outline-variant/30">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-3xl" data-icon="shield_with_heart">shield_with_heart</span>
+<div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface">3-YEAR GUARANTEE</h4>
+<p class="text-[12px] text-on-surface-variant">Full parts &amp; carry-in support</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-3xl" data-icon="local_shipping">local_shipping</span>
+<div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface">FREE ZA DELIVERY</h4>
+<p class="text-[12px] text-on-surface-variant">On all rigs over R 25,000</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-3xl" data-icon="timer">timer</span>
+<div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface">48H STRESS TEST</h4>
+<p class="text-[12px] text-on-surface-variant">Zero thermal bottlenecks guarantee</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-3xl" data-icon="forum">forum</span>
+<div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface">DIRECT WHATSAPP</h4>
+<p class="text-[12px] text-on-surface-variant">Live builder desk chat</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- STICKY FLOATING CONFIGURATION SUMMARY & CHECKOUT SYSTEM -->
+<div class="fixed bottom-0 left-0 right-0 z-40 bg-surface-container-lowest/95 backdrop-blur-2xl border-t border-primary-container/40 p-3 md:px-margin shadow-[0_-8px_30px_rgba(0,0,0,0.85)]" id="sticky-summary-bar">
+<div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<button class="p-2 rounded bg-surface-container border border-outline-variant/40 hover:border-primary-container text-primary-container flex items-center gap-1.5 transition-all" onclick="toggleConfigDrawer()" title="Expand hardware line items">
+<span class="material-symbols-outlined transition-transform duration-300" data-icon="expand_less" id="drawer-arrow">expand_less</span>
+<span class="hidden sm:inline text-label-md font-label-md">Hardware Spec Drawer</span>
+</button>
+<div>
+<span class="text-[11px] block font-label-sm text-on-surface-variant">ACTIVE BUILD TOTAL (ZAR)</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary-container leading-none" id="bar-total-price">R 28,499.00</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<button class="px-5 md:px-7 py-3 rounded bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-headline-sm text-[14px] md:text-[15px] font-bold uppercase tracking-wider flex items-center gap-2 shadow-[0_0_20px_rgba(16,185,129,0.5)] active:scale-95 transition-all" onclick="openWhatsAppCheckout()">
+<span class="material-symbols-outlined text-[20px]" data-icon="chat">chat</span>
+<span>ORDER VIA WHATSAPP</span>
+</button>
+</div>
+</div>
+</div>
+<!-- EXPANDABLE HARDWARE SPEC DRAWER (Overlaid on bottom) -->
+<div class="fixed bottom-16 left-0 right-0 z-30 bg-surface-container-low/95 backdrop-blur-2xl border-t border-outline-variant/40 p-4 md:px-margin max-h-[618px] overflow-y-auto transform translate-y-full transition-transform duration-300 shadow-[0_-12px_40px_rgba(0,0,0,0.9)] hidden" id="hardware-spec-drawer">
+<div class="max-w-7xl mx-auto space-y-4">
+<div class="flex items-center justify-between pb-2 border-b border-outline-variant/30">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary-container">CURRENT RIG MANIFEST</h3>
+<p class="text-[12px] text-on-surface-variant font-body-sm">Detailed telemetry bill of materials ready for hand assembly</p>
+</div>
+<button class="p-1 text-on-surface-variant hover:text-on-surface" onclick="toggleConfigDrawer()">
+<span class="material-symbols-outlined" data-icon="close">close</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-body-sm font-body-sm">
+<div class="space-y-2 p-3 rounded bg-surface-container-lowest/80 border border-outline-variant/30">
+<div class="flex justify-between py-1 border-b border-outline-variant/20"><span class="text-on-surface-variant">Processor (CPU):</span><span class="text-on-surface font-medium text-right" id="manifest-cpu">Intel Core i7-14700KF</span></div>
+<div class="flex justify-between py-1 border-b border-outline-variant/20"><span class="text-on-surface-variant">Graphics (GPU):</span><span class="text-on-surface font-medium text-right" id="manifest-gpu">RTX 4070 Ti Super 16GB</span></div>
+<div class="flex justify-between py-1 border-b border-outline-variant/20"><span class="text-on-surface-variant">Memory (RAM):</span><span class="text-on-surface font-medium text-right" id="manifest-ram">32GB DDR5 6000MHz RGB</span></div>
+<div class="flex justify-between py-1 border-b border-outline-variant/20"><span class="text-on-surface-variant">Storage (SSD):</span><span class="text-on-surface font-medium text-right" id="manifest-storage">2TB Samsung 990 Pro Gen4</span></div>
+</div>
+<div class="space-y-2 p-3 rounded bg-surface-container-lowest/80 border border-outline-variant/30">
+<div class="flex justify-between py-1 border-b border-outline-variant/20"><span class="text-on-surface-variant">Cooling System:</span><span class="text-on-surface font-medium text-right" id="manifest-cooling">360mm Triple Cryo Cooler</span></div>
+<div class="flex justify-between py-1 border-b border-outline-variant/20"><span class="text-on-surface-variant">Power Supply:</span><span class="text-on-surface font-medium text-right" id="manifest-psu">750W 80+ Gold Modular</span></div>
+<div class="flex justify-between py-1 border-b border-outline-variant/20"><span class="text-on-surface-variant">Chassis:</span><span class="text-on-surface font-medium text-right" id="manifest-chassis">Aurora Vortex R16 ZA</span></div>
+<div class="flex justify-between py-1 border-b border-outline-variant/20"><span class="text-on-surface-variant">Operating System:</span><span class="text-on-surface font-medium text-right" id="manifest-os">Windows 11 Home 64-bit</span></div>
+</div>
+</div>
+<!-- Fulfilment Options: Courier vs Pickup -->
+<div class="p-4 rounded bg-surface-container-high/60 border border-outline-variant/30 flex flex-col md:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-4">
+<label class="flex items-center gap-2 cursor-pointer text-label-md font-label-md">
+<input checked="" class="text-primary-container focus:ring-primary-container" name="delivery-mode" onchange="updateFulfillment(this.value)" type="radio" value="courier"/>
+<span>Nationwide The Courier Guy (Door to Door) - R 250 (FREE if over R25k)</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer text-label-md font-label-md">
+<input class="text-primary-container focus:ring-primary-container" name="delivery-mode" onchange="updateFulfillment(this.value)" type="radio" value="pickup"/>
+<span>Cape Town / Joburg Studio Collection - FREE</span>
+</label>
+</div>
+<div class="text-right">
+<span class="text-xs text-on-surface-variant">Assembly, Cable Management &amp; Stress Testing: </span>
+<span class="text-emerald-400 font-bold">100% FREE</span>
+</div>
+</div>
+</div>
+</div>
+<!-- WHATSAPP CHECKOUT MODAL -->
+<div class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden items-center justify-center p-4" id="checkout-modal">
+<div class="bg-surface-container-low border border-primary-container/50 rounded-lg max-w-xl w-full p-6 shadow-[0_0_50px_rgba(0,240,255,0.25)] relative max-h-[795px] overflow-y-auto">
+<button class="absolute top-4 right-4 text-on-surface-variant hover:text-on-surface" onclick="closeWhatsAppCheckout()">
+<span class="material-symbols-outlined" data-icon="close">close</span>
+</button>
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-emerald-400 text-3xl" data-icon="chat">chat</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">DIRECT WHATSAPP BUILD DESK</h3>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant mb-4">
+        Submit your exact build configuration directly to our lead engineer desk on WhatsApp (+27 82 123 4567) for priority build queuing and invoice confirmation.
+      </p>
+<form class="space-y-4" id="whatsapp-form" onsubmit="dispatchWhatsApp(event)">
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-1 uppercase">Full Name</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/40 rounded px-3 py-2 text-on-surface focus:border-primary-container focus:ring-1 focus:ring-primary-container outline-none" id="cust-name" placeholder="e.g. Liam Van Der Merwe" required="" type="text"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-1 uppercase">WhatsApp Number</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/40 rounded px-3 py-2 text-on-surface focus:border-primary-container focus:ring-1 focus:ring-primary-container outline-none" id="cust-phone" placeholder="e.g. 082 123 4567" required="" type="tel"/>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-1 uppercase">City / Province</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/40 rounded px-3 py-2 text-on-surface focus:border-primary-container focus:ring-1 focus:ring-primary-container outline-none" id="cust-city" placeholder="e.g. Sandton, Gauteng" required="" type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-1 uppercase">Live WhatsApp Message Preview</label>
+<div class="w-full h-32 p-3 bg-surface-container-lowest rounded border border-outline-variant/30 text-emerald-400 font-mono text-[11px] overflow-y-auto whitespace-pre-wrap" id="wa-preview-box"></div>
+</div>
+<div class="pt-2 flex items-center justify-between">
+<div>
+<span class="text-[11px] block font-label-sm text-on-surface-variant">TOTAL QUOTE INCL. VAT</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary-container" id="modal-total-display">R 28,499.00</span>
+</div>
+<button class="px-6 py-3 rounded bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-headline-sm text-[15px] font-bold uppercase tracking-wider flex items-center gap-2 shadow-[0_0_20px_rgba(16,185,129,0.5)] transition-all" type="submit">
+<span class="material-symbols-outlined text-[18px]" data-icon="send">send</span>
+<span>LAUNCH WHATSAPP NOW</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<!-- FOOTER -->
+<footer class="w-full px-margin py-space-xl flex flex-col md:flex-row justify-between items-center gap-space-md border-t border-outline-variant/30 bg-surface-container-lowest dark:bg-surface-container-lowest">
+<div class="flex flex-col items-center md:items-start gap-1">
+<span class="font-headline-sm text-headline-sm font-bold text-primary-container tracking-wider">BUDGETTECH ZA</span>
+<p class="text-body-sm font-body-sm text-on-surface-variant">© 2025 BUDGETTECHZA. HIGH-PERFORMANCE COMPUTING ENGINEERED IN SOUTH AFRICA. ALL RIGHTS RESERVED.</p>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-4 text-label-sm font-label-sm text-on-surface-variant">
+<a class="hover:text-primary-container transition-colors duration-200" href="#configurator">Warranty &amp; Guarantee</a>
+<span>•</span>
+<a class="hover:text-primary-container transition-colors duration-200" href="https://wa.me/27821234567" target="_blank">WhatsApp Support Desk</a>
+<span>•</span>
+<a class="hover:text-primary-container transition-colors duration-200" href="#configurator">Delivery Terms ZA</a>
+<span>•</span>
+<a class="hover:text-primary-container transition-colors duration-200" href="#configurator">Component Compatibility Policy</a>
+</div>
+</footer>
+<!-- SCRIPT ENGINE -->
+<script>
+    // State store
+    const configState = {
+      basePrice: 16999,
+      chassis: 'aurora',
+      lighting: 'cyan',
+      deliveryMode: 'courier',
+      selections: {
+        cpu: { id: 'cpu-2', name: 'Intel Core i7-14700KF', price: 3400, watts: 125 },
+        gpu: { id: 'gpu-3', name: 'RTX 4070 Ti Super 16GB', price: 8500, watts: 285 },
+        ram: { id: 'ram-2', name: '32GB DDR5 6000MHz RGB', price: 1450, watts: 15 },
+        storage: { id: 'storage-2', name: '2TB Samsung 990 Pro Gen4', price: 1750, watts: 8 },
+        cooling: { id: 'cool-2', name: '360mm Triple Cryo Cooler', price: 1200, watts: 25 },
+        psu: { id: 'psu-1', name: '750W 80+ Gold Modular', price: 0, capacity: 750 },
+        os: { id: 'os-1', name: 'Windows 11 Home 64-bit', price: 0, watts: 0 }
+      }
+    };
+
+    const categories = ['cpu', 'gpu', 'ram', 'storage', 'cooling', 'psu', 'os'];
+    let currentTabIndex = 0;
+
+    function formatRand(num) {
+      return 'R ' + num.toLocaleString('en-ZA') + '.00';
+    }
+
+    function calculateTotal() {
+      let upgrades = 0;
+      for (let key in configState.selections) {
+        upgrades += configState.selections[key].price;
+      }
+      return configState.basePrice + upgrades;
+    }
+
+    function calculateWattage() {
+      let watts = 80; // Baseline mobo, fans, RGB draw
+      watts += configState.selections.cpu.watts || 65;
+      watts += configState.selections.gpu.watts || 115;
+      watts += configState.selections.ram.watts || 10;
+      watts += configState.selections.storage.watts || 5;
+      watts += configState.selections.cooling.watts || 15;
+      return watts;
+    }
+
+    function updateUI() {
+      const total = calculateTotal();
+      const totalFormatted = formatRand(total);
+      
+      document.getElementById('preview-price-display').innerText = totalFormatted;
+      document.getElementById('bar-total-price').innerText = totalFormatted;
+      document.getElementById('modal-total-display').innerText = totalFormatted;
+
+      // Update Wattage Bar
+      const totalWatts = calculateWattage();
+      const psuCap = configState.selections.psu.capacity || 750;
+      const pct = Math.min(Math.round((totalWatts / psuCap) * 100), 100);
+      document.getElementById('wattage-indicator').innerText = `${totalWatts}W / ${psuCap}W GOLD`;
+      document.getElementById('wattage-bar-fill').style.width = pct + '%';
+
+      // Update FPS indicators dynamically based on GPU
+      const gpuId = configState.selections.gpu.id;
+      if (gpuId === 'gpu-1') {
+        document.getElementById('fps-1080').innerText = '165+ FPS';
+        document.getElementById('fps-1440').innerText = '95 FPS';
+        document.getElementById('fps-4k').innerText = '48 FPS';
+      } else if (gpuId === 'gpu-2') {
+        document.getElementById('fps-1080').innerText = '210+ FPS';
+        document.getElementById('fps-1440').innerText = '125 FPS';
+        document.getElementById('fps-4k').innerText = '68 FPS';
+      } else if (gpuId === 'gpu-3') {
+        document.getElementById('fps-1080').innerText = '240+ FPS';
+        document.getElementById('fps-1440').innerText = '145 FPS';
+        document.getElementById('fps-4k').innerText = '82 FPS';
+      } else {
+        document.getElementById('fps-1080').innerText = '300+ FPS';
+        document.getElementById('fps-1440').innerText = '195 FPS';
+        document.getElementById('fps-4k').innerText = '118 FPS';
+      }
+
+      // Update Spec Manifest
+      document.getElementById('manifest-cpu').innerText = configState.selections.cpu.name;
+      document.getElementById('manifest-gpu').innerText = configState.selections.gpu.name;
+      document.getElementById('manifest-ram').innerText = configState.selections.ram.name;
+      document.getElementById('manifest-storage').innerText = configState.selections.storage.name;
+      document.getElementById('manifest-cooling').innerText = configState.selections.cooling.name;
+      document.getElementById('manifest-psu').innerText = configState.selections.psu.name;
+      document.getElementById('manifest-os').innerText = configState.selections.os.name;
+      document.getElementById('manifest-chassis').innerText = configState.chassis === 'aurora' ? 'Aurora Vortex R16 ZA' : 'Apex Titan ZA Flow';
+
+      updateWhatsAppPreview();
+    }
+
+    function selectHardware(category, id, price, name, specValue) {
+      if (category === 'psu') {
+        configState.selections[category] = { id, name, price, capacity: specValue };
+      } else {
+        configState.selections[category] = { id, name, price, watts: specValue };
+      }
+
+      // Highlight active card within that panel
+      const panel = document.getElementById(`panel-${category}`);
+      panel.querySelectorAll('.hardware-card').forEach(card => {
+        card.classList.remove('border-primary-container', 'glow-cyan-card');
+        card.classList.add('border-outline-variant/40');
+        const dot = card.querySelector('.radio-dot');
+        if (dot) dot.innerHTML = '';
+      });
+
+      const selectedCard = document.getElementById(`card-${id}`);
+      if (selectedCard) {
+        selectedCard.classList.remove('border-outline-variant/40');
+        selectedCard.classList.add('border-primary-container', 'glow-cyan-card');
+        const dot = selectedCard.querySelector('.radio-dot');
+        if (dot) dot.innerHTML = '<span class="w-1.5 h-1.5 rounded-full bg-on-primary-fixed"></span>';
+      }
+
+      updateUI();
+    }
+
+    function setActiveTab(tabKey) {
+      currentTabIndex = categories.indexOf(tabKey);
+      categories.forEach(k => {
+        const btn = document.getElementById(`tab-btn-${k}`);
+        const panel = document.getElementById(`panel-${k}`);
+        if (k === tabKey) {
+          btn.classList.add('active-cat-tab', 'bg-primary-container', 'text-on-primary-fixed', 'font-bold');
+          btn.classList.remove('text-on-surface-variant', 'bg-surface-container-high/40');
+          panel.classList.remove('hidden');
+        } else {
+          btn.classList.remove('active-cat-tab', 'bg-primary-container', 'text-on-primary-fixed', 'font-bold');
+          btn.classList.add('text-on-surface-variant', 'bg-surface-container-high/40');
+          panel.classList.add('hidden');
+        }
+      });
+    }
+
+    function navigateTab(direction) {
+      let newIdx = currentTabIndex + direction;
+      if (newIdx >= 0 && newIdx < categories.length) {
+        setActiveTab(categories[newIdx]);
+      }
+    }
+
+    function switchChassis(type) {
+      configState.chassis = type;
+      const auroraBtn = document.getElementById('btn-chassis-aurora');
+      const apexBtn = document.getElementById('btn-chassis-apex');
+      const img = document.getElementById('activeChassisImage');
+      const tag = document.getElementById('model-tag');
+
+      if (type === 'aurora') {
+        auroraBtn.className = 'px-2 py-0.5 rounded text-[11px] font-label-sm border border-primary-container bg-primary-container/20 text-primary-container';
+        apexBtn.className = 'px-2 py-0.5 rounded text-[11px] font-label-sm border border-outline-variant/40 bg-surface-container text-on-surface-variant hover:text-primary';
+        img.src = "placeholder";
+        tag.innerText = "AURORA VORTEX R16 ZA EDITION";
+      } else {
+        apexBtn.className = 'px-2 py-0.5 rounded text-[11px] font-label-sm border border-primary-container bg-primary-container/20 text-primary-container';
+        auroraBtn.className = 'px-2 py-0.5 rounded text-[11px] font-label-sm border border-outline-variant/40 bg-surface-container text-on-surface-variant hover:text-primary';
+        img.src = "placeholder";
+        tag.innerText = "APEX TITAN ZA FLOW CHASSIS";
+      }
+      updateUI();
+    }
+
+    function setChassisLighting(mode, label) {
+      configState.lighting = mode;
+      document.getElementById('active-light-label').innerText = label;
+      const glow = document.getElementById('ambient-light-glow');
+      
+      if (mode === 'cyan') {
+        glow.className = "absolute inset-0 bg-primary-container/15 transition-colors duration-500 pointer-events-none";
+      } else if (mode === 'blue') {
+        glow.className = "absolute inset-0 bg-secondary-container/20 transition-colors duration-500 pointer-events-none";
+      } else if (mode === 'white') {
+        glow.className = "absolute inset-0 bg-white/10 transition-colors duration-500 pointer-events-none";
+      } else {
+        glow.className = "absolute inset-0 bg-transparent transition-colors duration-500 pointer-events-none";
+      }
+    }
+
+    function toggleSideNav() {
+      const drawer = document.getElementById('tactical-drawer');
+      const backdrop = document.getElementById('drawer-backdrop');
+      const isOpen = !drawer.classList.contains('-translate-x-full');
+      if (isOpen) {
+        drawer.classList.add('-translate-x-full');
+        backdrop.classList.add('hidden');
+      } else {
+        drawer.classList.remove('-translate-x-full');
+        backdrop.classList.remove('hidden');
+      }
+    }
+
+    function toggleConfigDrawer() {
+      const drawer = document.getElementById('hardware-spec-drawer');
+      const arrow = document.getElementById('drawer-arrow');
+      if (drawer.classList.contains('hidden')) {
+        drawer.classList.remove('hidden');
+        drawer.classList.remove('translate-y-full');
+        arrow.style.transform = 'rotate(180deg)';
+      } else {
+        drawer.classList.add('translate-y-full');
+        setTimeout(() => drawer.classList.add('hidden'), 300);
+        arrow.style.transform = 'rotate(0deg)';
+      }
+    }
+
+    function openConfigSummary() {
+      toggleConfigDrawer();
+    }
+
+    function updateFulfillment(mode) {
+      configState.deliveryMode = mode;
+      updateUI();
+    }
+
+    function resetToDefaults() {
+      selectHardware('cpu', 'cpu-1', 0, 'Intel Core i5-14400F', 65);
+      selectHardware('gpu', 'gpu-1', 0, 'NVIDIA RTX 4060 8GB', 115);
+      selectHardware('ram', 'ram-1', 0, '16GB DDR5 5600MHz RGB', 10);
+      selectHardware('storage', 'storage-1', 0, '1TB NVMe Gen4 SSD', 5);
+      selectHardware('cooling', 'cool-1', 0, '240mm Aurora Dual Fan AIO', 15);
+      selectHardware('psu', 'psu-1', 0, '750W 80+ Gold Modular', 750);
+      selectHardware('os', 'os-1', 0, 'Windows 11 Home 64-bit', 0);
+      switchChassis('aurora');
+      setActiveTab('cpu');
+    }
+
+    function loadRigPreset(type) {
+      if (type === 'titan') {
+        selectHardware('cpu', 'cpu-1', 0, 'Intel Core i5-14400F', 65);
+        selectHardware('gpu', 'gpu-1', 0, 'NVIDIA RTX 4060 8GB', 115);
+        selectHardware('ram', 'ram-1', 0, '16GB DDR5 5600MHz RGB', 10);
+        selectHardware('storage', 'storage-1', 0, '1TB NVMe Gen4 SSD', 5);
+        selectHardware('cooling', 'cool-1', 0, '240mm Aurora Dual Fan AIO', 15);
+        switchChassis('apex');
+      } else if (type === 'aurora') {
+        selectHardware('cpu', 'cpu-2', 3400, 'Intel Core i7-14700KF', 125);
+        selectHardware('gpu', 'gpu-3', 8500, 'RTX 4070 Ti Super 16GB', 285);
+        selectHardware('ram', 'ram-2', 1450, '32GB DDR5 6000MHz RGB', 15);
+        selectHardware('storage', 'storage-2', 1750, '2TB Samsung 990 Pro Gen4', 8);
+        selectHardware('cooling', 'cool-2', 1200, '360mm Triple Cryo Cooler', 25);
+        switchChassis('aurora');
+      } else if (type === 'krypton') {
+        selectHardware('cpu', 'cpu-4', 8900, 'Intel Core i9-14900KS', 150);
+        selectHardware('gpu', 'gpu-4', 14200, 'RTX 4080 Super 16GB', 320);
+        selectHardware('ram', 'ram-3', 3600, '64GB DDR5 6400MHz High-Speed', 20);
+        selectHardware('storage', 'storage-3', 4100, '4TB Kingston Fury', 10);
+        selectHardware('cooling', 'cool-2', 1200, '360mm Triple Cryo Cooler', 25);
+        selectHardware('psu', 'psu-3', 2100, '1000W ATX 3.0 Titanium', 1000);
+        selectHardware('os', 'os-2', 650, 'Windows 11 Pro 64-bit', 0);
+        switchChassis('aurora');
+      }
+      document.getElementById('configurator').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function setFilter(filter) {
+      document.querySelectorAll('.category-pill').forEach(pill => {
+        pill.classList.remove('border-primary-container', 'text-primary-container');
+        pill.classList.add('border-outline-variant/40', 'text-on-surface-variant');
+      });
+      event.target.classList.remove('border-outline-variant/40', 'text-on-surface-variant');
+      event.target.classList.add('border-primary-container', 'text-primary-container');
+
+      if (filter === 'custom') {
+        document.getElementById('configurator').scrollIntoView({ behavior: 'smooth' });
+      } else if (filter === 'prebuilt' || filter === 'esports') {
+        document.getElementById('prebuilt-showcase').scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    // WhatsApp Checkout Functions
+    function openWhatsAppCheckout() {
+      document.getElementById('checkout-modal').classList.remove('hidden');
+      document.getElementById('checkout-modal').classList.add('flex');
+      updateWhatsAppPreview();
+    }
+
+    function closeWhatsAppCheckout() {
+      document.getElementById('checkout-modal').classList.add('hidden');
+      document.getElementById('checkout-modal').classList.remove('flex');
+    }
+
+    function getFormattedWhatsAppText(name = 'Customer', city = 'South Africa') {
+      const total = calculateTotal();
+      const msg = `⚡ *BUDGETTECH ZA // RIG BUILD ORDER*
+----------------------------------------
+*Client:* ${name} (${city})
+*Chassis:* ${configState.chassis === 'aurora' ? 'Aurora Vortex R16 ZA' : 'Apex Titan ZA'}
+*CPU:* ${configState.selections.cpu.name}
+*GPU:* ${configState.selections.gpu.name}
+*RAM:* ${configState.selections.ram.name}
+*Storage:* ${configState.selections.storage.name}
+*Cooler:* ${configState.selections.cooling.name}
+*PSU:* ${configState.selections.psu.name}
+*OS:* ${configState.selections.os.name}
+*Delivery Method:* ${configState.deliveryMode === 'courier' ? 'Courier Guy Nationwide' : 'Studio Pickup'}
+----------------------------------------
+*TOTAL QUOTE:* ${formatRand(total)}
+*Turnaround:* 2-3 Business Days (Tested & Burned-in)
+_Sent via BudgetTechZA Tactical Rig Console_`;
+      return msg;
+    }
+
+    function updateWhatsAppPreview() {
+      const name = document.getElementById('cust-name') ? document.getElementById('cust-name').value || 'Liam Van Der Merwe' : 'Customer';
+      const city = document.getElementById('cust-city') ? document.getElementById('cust-city').value || 'Johannesburg' : 'ZA';
+      const preview = document.getElementById('wa-preview-box');
+      if (preview) {
+        preview.innerText = getFormattedWhatsAppText(name, city);
+      }
+    }
+
+    function dispatchWhatsApp(e) {
+      e.preventDefault();
+      const name = document.getElementById('cust-name').value;
+      const city = document.getElementById('cust-city').value;
+      const rawText = getFormattedWhatsAppText(name, city);
+      const encoded = encodeURIComponent(rawText);
+      const url = `https://wa.me/27821234567?text=${encoded}`;
+      window.open(url, '_blank');
+      closeWhatsAppCheckout();
+    }
+
+    // Attach live keystroke listener to form
+    document.addEventListener('DOMContentLoaded', () => {
+      const nameInput = document.getElementById('cust-name');
+      const cityInput = document.getElementById('cust-city');
+      if (nameInput) nameInput.addEventListener('input', updateWhatsAppPreview);
+      if (cityInput) cityInput.addEventListener('input', updateWhatsAppPreview);
+      updateUI();
+    });
+  </script>
+</body></html>
